@@ -22,9 +22,9 @@ const keys = config.keys;
 const execAll = () => {
   scraper.getCountries(keys, redis);
   scraper.getAll(keys, redis);
-  scraper.getStates(keys, redis);
-  scraper.jhuLocations.jhudata(keys, redis);
-  scraper.jhuLocations.jhudata_v2(keys, redis);
+  //scraper.getStates(keys, redis);
+  //scraper.jhuLocations.jhudata(keys, redis);
+  //scraper.jhuLocations.jhudata_v2(keys, redis);
   scraper.historical.historical_v2(keys, redis);
 };
 execAll()
